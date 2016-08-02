@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/font_blue_deep"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="huihui.xiao.ph.demo.ui16.LoginActivity">
+
+
+    <huihui.xiao.ph.demo.ui16.custom.StereoView
+        android:id="@+id/stereoView"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whites"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/icon_password"/>
+
+        <huihui.xiao.ph.demo.ui16.custom.CustomEdittext
+            android:id="@+id/et_password"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/gray"/>
+
+        <huihui.xiao.ph.demo.ui16.custom.RippleView
+            android:id="@+id/rv_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            app:normal="@mipmap/icon_next_gray"
+            app:pressed="@mipmap/icon_next"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whites"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/icon_email"/>
+
+            <huihui.xiao.ph.demo.ui16.custom.CustomEdittext
+                android:id="@+id/et_email"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:hint="Email"
+                android:textColorHint="@color/gray"/>
+
+            <huihui.xiao.ph.demo.ui16.custom.RippleView
+                android:id="@+id/rv_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@mipmap/icon_next_gray"
+                app:pressed="@mipmap/icon_next"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whites"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/icon_user"/>
+
+            <huihui.xiao.ph.demo.ui16.custom.CustomEdittext
+                android:id="@+id/et_username"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:background="@null"
+                android:hint="UserName"
+                android:textColorHint="@color/gray"
+                android:textSize="18sp"/>
+
+            <huihui.xiao.ph.demo.ui16.custom.RippleView
+                android:id="@+id/rv_username"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@mipmap/icon_next_gray"
+                app:pressed="@mipmap/icon_next"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whites"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/icon_love"/>
+
+            <huihui.xiao.ph.demo.ui16.custom.CustomTextView
+                android:id="@+id/tv_welcome"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:gravity="center"
+                android:hint="You are welcome !"
+                android:textColorHint="@color/gray"
+                android:textSize="18sp"/>
+
+            <huihui.xiao.ph.demo.ui16.custom.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@mipmap/icon_love"/>
+        </LinearLayout>
+    </huihui.xiao.ph.demo.ui16.custom.StereoView>
+</LinearLayout>

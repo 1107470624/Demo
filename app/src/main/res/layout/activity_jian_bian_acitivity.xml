@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="huihui.xiao.ph.demo.ui15.JianBianAcitivity">
+    <huihui.xiao.ph.demo.ui15.ObservableScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@mipmap/ic_launcher" />
+
+            <huihui.xiao.ph.demo.ui15.MyListview
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+            </huihui.xiao.ph.demo.ui15.MyListview>
+        </LinearLayout>
+    </huihui.xiao.ph.demo.ui15.ObservableScrollView>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="我是标题"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="#00000000" />
+</RelativeLayout>

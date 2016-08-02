@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_font">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="@color/gray_font">
+
+        <RelativeLayout
+            android:id="@+id/tick_mark_labels_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"/>
+
+        <huihui.xiao.ph.demo.ui12.DiscreteSlider
+            android:id="@+id/discrete_slider"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@color/whites"
+            app:backdropFillColor="@color/whites"
+            app:backdropStrokeColor="@color/whites"
+            app:backdropStrokeWidth="1dp"
+            app:horizontalBarThickness="4dp"
+            app:tickMarkCount="5"
+            app:tickMarkRadius="8dp"
+            app:thumb="@drawable/thumb"
+            app:progressDrawable="@drawable/transparent_progress_drawable"/>
+
+    </LinearLayout>
+
+</FrameLayout>

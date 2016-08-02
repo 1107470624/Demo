@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    >
+<!--indeterminate:不明确(false)就是滚动条的当前值自动在最小到最大值之间来回移动，
+形成这样一个动画效果，这个只是告诉别人“我正在工作”，
+但不能提示工作进度到哪个阶段。主要是在进行一些无法确定操作时间的任务时作为提示。
+而“明确”(true)就是根据你的进度可以设置现在的进度值。-->
+    <ProgressBar
+        android:id="@+id/pull_to_refresh_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/load_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dp"
+        android:gravity="center"
+        android:text="@string/p2refresh_head_load_more"
+        android:textColor="@color/black"
+        />
+</LinearLayout>

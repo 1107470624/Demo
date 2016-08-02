@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="huihui.xiao.ph.demo.ui18.PickPictureActivity">
+<!--Android:cacheColorHint="#000000" 去除listview的拖动背景色-->
+    <!--android:horizontalSpacing=”10dp”      //两列之间的边距-->
+    <!-- android:columnWidth=”90dp "  //每列的宽度，也就是Item的宽度-->
+    <!-- android:stretchMode=”columnWidth"//缩放与列宽大小同步
+        android:verticalSpacing=”10dp”          //两行之间的边距-->
+    <GridView
+        android:id="@+id/child_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:padding="5dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<huihui.xiao.ph.demo.ui13.cardstack.CardStackView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stackview_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    android:clipToPadding="false"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp"
+    tools:context=".ui13.CardActivity">
+
+</huihui.xiao.ph.demo.ui13.cardstack.CardStackView>

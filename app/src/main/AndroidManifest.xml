@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="huihui.xiao.ph.demo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 启动页面 -->
+        <activity android:name=".LoadActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- listview滑动删除 -->
+        <activity android:name=".ui1.MainActivity" />
+        <!-- 自定义时钟 -->
+        <activity android:name=".ui2.timer2" />
+        <activity android:name=".ui2.timer" />
+        <!-- 列表 -->
+        <activity android:name=".ui3.stackView" />
+        <!-- 好友列表 -->
+        <activity android:name=".ui4.ExpandableList" />
+        <!-- 水平滚动GALLERY -->
+        <activity android:name=".ui5.GalleryActivity" />
+        <!-- 自定义baseactivity -->
+        <activity android:name=".ui6.TwoBtnActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- 输入框撤销之前的操作 -->
+        <activity android:name=".ui7.EditViewActivity" />
+        <!-- 京东下单流水灯 -->
+        <activity android:name=".ui8.DrawCanvasActivity" />
+        <!-- 图片标签 -->
+        <activity android:name=".ui9.SlantedActivity" />
+        <!-- 点击图片产生酷炫的东西 -->
+        <activity android:name=".ui10.KuXuanActivity" />
+        <!-- 头像为圆的 -->
+        <activity android:name=".ui11.TuPianActivity" />
+        <!-- 微信相册 -->
+        <activity android:name=".ui12.WeiXinActivity" />
+        <activity android:name=".ui12.CanmerActivity" />
+        <!-- 卡片重合 -->
+        <activity android:name=".ui13.CardActivity" />
+        <!-- 连个fragment下滑 -->
+        <activity android:name=".ui14.XiaHuaActivity" />
+        <!-- 滚动时标题渐变 -->
+        <activity android:name=".ui15.JianBianAcitivity" />
+        <!-- 输入框旋转 -->
+        <activity android:name=".ui16.StereoviewActivity" />
+        <activity android:name=".ui16.SettingActivity" />
+        <activity android:name=".ui16.LoginActivity" />
+        <activity android:name=".ui16.ImageActivity" />
+        <!-- 表情 -->
+        <activity android:name=".ui17.menus.SuppressLintActivity" />
+        <!-- 饿了么的加入购物车 -->
+        <activity android:name=".ui18.ELeMaActivvity" />
+        <!-- 后台开启服务运行球球 -->
+        <activity android:name=".ui19.FloatingActivity" />
+        <activity android:name=".ui19.ShotActivity" />
+
+        <service android:name=".ui19.FxService" />
+
+        <activity android:name=".ui20.EmptyActivity" />
+        <activity android:name=".ui20.CircularActivity"></activity>
+    </application>
+
+</manifest>
