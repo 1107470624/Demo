@@ -28,7 +28,9 @@ import huihui.xiao.ph.demo.ui8.DrawCanvasActivity;
 import huihui.xiao.ph.demo.ui9.SlantedActivity;
 
 public class LoadActivity extends Activity implements View.OnClickListener{
-
+    /**
+     * 你是傻逼吗？有这样测试的？
+     */
     private Button delete,clockview1,clockview2,stackview,expandable,gallery1,back_two;
     private Button cexiao,liushuideng,biaoqian,datu,tupian,keduxian,kapian,xiahua,jianbian;
     private Button xuanzhuan,biaoqin,eMa,qiuqiu;
