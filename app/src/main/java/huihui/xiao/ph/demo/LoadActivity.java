@@ -19,6 +19,7 @@ import huihui.xiao.ph.demo.ui18.ELeMaActivvity;
 import huihui.xiao.ph.demo.ui19.FloatingActivity;
 import huihui.xiao.ph.demo.ui2.timer;
 import huihui.xiao.ph.demo.ui2.timer2;
+import huihui.xiao.ph.demo.ui20.CircularActivity;
 import huihui.xiao.ph.demo.ui3.stackView;
 import huihui.xiao.ph.demo.ui4.ExpandableList;
 import huihui.xiao.ph.demo.ui5.GalleryActivity;
@@ -28,12 +29,10 @@ import huihui.xiao.ph.demo.ui8.DrawCanvasActivity;
 import huihui.xiao.ph.demo.ui9.SlantedActivity;
 
 public class LoadActivity extends Activity implements View.OnClickListener{
-    /**
-     * 你是傻逼吗？有这样测试的？0.0....
-     */
+
     private Button delete,clockview1,clockview2,stackview,expandable,gallery1,back_two;
     private Button cexiao,liushuideng,biaoqian,datu,tupian,keduxian,kapian,xiahua,jianbian;
-    private Button xuanzhuan,biaoqin,eMa,qiuqiu;
+    private Button xuanzhuan,biaoqin,eMa,qiuqiu,shuibo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +61,7 @@ public class LoadActivity extends Activity implements View.OnClickListener{
         biaoqin = (Button) findViewById(R.id.biaoqin);
         eMa = (Button) findViewById(R.id.eMa);
         qiuqiu  = (Button) findViewById(R.id.qiuqiu);
+        shuibo = (Button) findViewById(R.id.shuibo);
 
         delete.setOnClickListener(this);
         clockview1.setOnClickListener(this);
@@ -83,6 +83,7 @@ public class LoadActivity extends Activity implements View.OnClickListener{
         biaoqin.setOnClickListener(this);
         eMa.setOnClickListener(this);
         qiuqiu.setOnClickListener(this);
+        shuibo.setOnClickListener(this);
     }
 
     @Override
@@ -148,6 +149,9 @@ public class LoadActivity extends Activity implements View.OnClickListener{
                 break;
             case R.id.qiuqiu:
                 startActivity(new Intent(LoadActivity.this, FloatingActivity.class));
+                break;
+            case R.id.shuibo:
+                startActivity(new Intent(LoadActivity.this, CircularActivity.class));
                 break;
         }
     }
