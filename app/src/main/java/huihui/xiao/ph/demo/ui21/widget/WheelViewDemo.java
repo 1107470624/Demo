@@ -18,6 +18,10 @@ import android.widget.LinearLayout;
 import huihui.xiao.ph.demo.R;
 
 public class WheelViewDemo extends AppCompatActivity {
+
+    /**
+     * 地区涮选
+     */
     public static final String TAG = "WheelViewDemo";
 
     private static Button bt_click;
