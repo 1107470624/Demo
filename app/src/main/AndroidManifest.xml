@@ -77,7 +77,8 @@
         <service android:name=".ui19.FxService" />
 
         <activity android:name=".ui20.EmptyActivity" />
-        <activity android:name=".ui20.CircularActivity"></activity>
+        <activity android:name=".ui20.CircularActivity" />
+        <activity android:name=".ui21.widget.WheelViewDemo"></activity>
     </application>
 
 </manifest>

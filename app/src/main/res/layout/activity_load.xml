@@ -188,5 +188,12 @@
             android:layout_height="wrap_content"
             android:text="水波"
             />
+        <Button
+            android:id="@+id/diqu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="地区"
+            />
     </LinearLayout>
 </LinearLayout>

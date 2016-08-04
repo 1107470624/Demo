@@ -20,6 +20,7 @@ import huihui.xiao.ph.demo.ui19.FloatingActivity;
 import huihui.xiao.ph.demo.ui2.timer;
 import huihui.xiao.ph.demo.ui2.timer2;
 import huihui.xiao.ph.demo.ui20.CircularActivity;
+import huihui.xiao.ph.demo.ui21.widget.WheelViewDemo;
 import huihui.xiao.ph.demo.ui3.stackView;
 import huihui.xiao.ph.demo.ui4.ExpandableList;
 import huihui.xiao.ph.demo.ui5.GalleryActivity;
@@ -32,7 +33,7 @@ public class LoadActivity extends Activity implements View.OnClickListener{
 
     private Button delete,clockview1,clockview2,stackview,expandable,gallery1,back_two;
     private Button cexiao,liushuideng,biaoqian,datu,tupian,keduxian,kapian,xiahua,jianbian;
-    private Button xuanzhuan,biaoqin,eMa,qiuqiu,shuibo;
+    private Button xuanzhuan,biaoqin,eMa,qiuqiu,shuibo,diqu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +63,7 @@ public class LoadActivity extends Activity implements View.OnClickListener{
         eMa = (Button) findViewById(R.id.eMa);
         qiuqiu  = (Button) findViewById(R.id.qiuqiu);
         shuibo = (Button) findViewById(R.id.shuibo);
+        diqu = (Button) findViewById(R.id.diqu);
 
         delete.setOnClickListener(this);
         clockview1.setOnClickListener(this);
@@ -84,6 +86,7 @@ public class LoadActivity extends Activity implements View.OnClickListener{
         eMa.setOnClickListener(this);
         qiuqiu.setOnClickListener(this);
         shuibo.setOnClickListener(this);
+        diqu.setOnClickListener(this);
     }
 
     @Override
@@ -152,6 +155,9 @@ public class LoadActivity extends Activity implements View.OnClickListener{
                 break;
             case R.id.shuibo:
                 startActivity(new Intent(LoadActivity.this, CircularActivity.class));
+                break;
+            case R.id.diqu:
+                startActivity(new Intent(LoadActivity.this, WheelViewDemo.class));
                 break;
         }
     }
